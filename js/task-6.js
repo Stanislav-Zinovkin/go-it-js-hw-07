@@ -23,6 +23,11 @@ function createBoxes(amount) {
   boxesContainer.append(...boxes);
 }
 
+function destroyBoxes() {
+  const boxesContainer = document.getElementById("boxes");
+  boxesContainer.innerHTML = "";
+}
+
 const createButton = document.querySelector("[data-create]");
 const destroyButton = document.querySelector("[data-destroy]");
 const input = document.querySelector('input[type="number"]');
